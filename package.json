@@ -1,0 +1,12 @@
+{
+  "name": "koa-captcha-2",
+  "version": "1.0.0",
+  "description": "Captcha utils for koa 2",
+  "main": "index.js",
+  "repository": "git@github.com:fritx/koa-captcha-2.git",
+  "author": "Fritz Lin",
+  "license": "MIT",
+  "dependencies": {
+    "gd-bmp": "^1.2.4"
+  }
+}
