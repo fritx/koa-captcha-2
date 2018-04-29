@@ -1,5 +1,7 @@
 # koa-captcha-2
 
+<img width="300" src="https://raw.githubusercontent.com/fritx/koa-captcha-2/master/pic.png">
+
 > Captcha utils for koa 2
 
 *Based on [gd-bmp](https://github.com/zengming00/node-gd-bmp)*
