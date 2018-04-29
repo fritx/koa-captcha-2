@@ -15,10 +15,11 @@ async function drawCaptcha (ctx) {
 
 function verifyCaptcha (ctx) {
   let { captchaKey, captcha } = ctx.request.body
+  if (!captchaKey || !captcha) return false
   let sessKey = `${prefix}${captchaKey}`
   let val = ctx.session[sessKey]
   ctx.session[sessKey] = null // 一次性使用后清空
-  return val === captcha.toUpperCase()
+  return val && val === captcha.toUpperCase()
 }
 
 // https://github.com/zengming00/node-gd-bmp
